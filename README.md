@@ -1,6 +1,15 @@
 # Discrete-Component-LED-Dimmer
 Simple project about controlling LED's brightness without using microcontroler and integrated circuits.
 
+## Table of Contents
+* [Project Motivation](#project-motivation)
+* [Key Technical Concepts](#key-technical-concepts)
+* [How It Works](#how-it-works)
+* [Calculating Component Values](#calculating-values)
+* [Schematic](#schematic)
+* [Building a Prototype](#building-a-prototype)
+    * [Visuals & Video Demo](#building-a-prototype)
+      
 ## Project Motivation:
 
 At the begining, I didn't think about making full project. I was just curious about changing LED's brightness using only buttons and discrete components. When an idea came to my mind, I needed to design a schematic. Finally having a schematic made me ended up with working project.
