@@ -49,9 +49,10 @@ Image below shows my working prototype of discrete LED dimmer using basic compon
 Front view:
 ![LedDimmerFront](https://github.com/user-attachments/assets/add26725-ad3c-47bf-8a02-04e4232c30d7)
 
-Backside view:
-![LedDimmerBack](https://github.com/user-attachments/assets/494533fd-7739-4f4f-9026-4062284ac97a)
 
+Video presentation:
+
+![Discrete_Dimmer_Gif_cropped](https://github.com/user-attachments/assets/a7f93f05-720d-483c-a2a2-07d727f5a24d)
 
 
 
