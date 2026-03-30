@@ -10,4 +10,17 @@ The primary challenge of this project was to transform a momentary signal into a
 
 ## Calculating values
 
+LED needs 20mA current to provide full brightness and power supply is 9V battery. I decided to use 1000μF electrolitic capacitor because it's big enough to provide stable output and as trainsitor I use NPN 2N2222.
 
+### Calculating second's transitor emitter resistance:
+I assume that colector current is the same as emitter current because base current is 100-300 times smaller than collector current so I calculated this current using emitter current formula:
+
+$$I_E = \frac{V_{BE}}{R_E}$$
+
+The maximum volage provided by capacitor is 9V but because of the Darlington pair this voltage goes two times trough emitter–base junction we need to subtract voltage drops:
+
+$$V_BE=9V-2*(0.7)=7.6V$$
+
+#### Now we can find $$R_E$$
+
+$$20mA = \frac{7.6V}{R_E}$$ $$R_E = 380Ω$$
