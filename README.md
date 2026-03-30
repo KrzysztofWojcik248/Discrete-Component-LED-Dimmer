@@ -10,9 +10,14 @@ The primary challenge of this project was to transform a momentary signal into a
 
 ## Calculating values
 
-LED needs 20mA current to provide full brightness and power supply is 9V battery. I decided to use 1000μF electrolitic capacitor because it's big enough to provide stable output and as trainsitor I use NPN 2N2222.
+- LED needs a 20mA current to provide full brightness
+- power supply is 9V battery
+- I decided to use 1000μF electrolitic capacitor because it's big enough to provide stable outpu
+- used transistor is NPN 2N2222.
 
 ### Calculating second's transitor emitter resistance:
+***All the values and components which are calculeted and I'm refering to can be found on schematic in section below***
+
 I assume that colector current is the same as emitter current because base current is 100-300 times smaller than collector current so I calculated this current using emitter current formula:
 
 $$I_E = \frac{V_{BE}}{R_E}$$
@@ -21,6 +26,18 @@ The maximum volage provided by capacitor is 9V but because of the Darlington pai
 
 $$V_BE=9V-2*(0.7)=7.6V$$
 
-#### Now we can find $$R_E$$
+#### Now $$R_E$$ can be found:
 
-$$20mA = \frac{7.6V}{R_E}$$ $$R_E = 380Ω$$
+$$20mA = \frac{7.6V}{R_E}$$
+
+$$R_E = 380Ω$$
+
+### Calculating other currents:
+
+hFE of 2N2222 is usually in range of 100-300 but I assume it as 100 (just in case) so if emitter current of Q2 (second transistor) is 20mA its base current would be 0.2mA which stands for Q1 emitter current. If Q1 emitter current is 0.2mA its base current would be only 2μA. Considering these currents I decided to put two safety resistors. R2 (2.2kΩ) limitates Q1   collector currents and drops collector voltage by ~0.4V which is far away from 9V of power supply. R3 (4.7kΩ) limitates Q1 base current in case of any short circuits, with typical current below 2μA won't be noticable.
+
+### Choosing resitance near buttons
+
+## Schematic
+
+
