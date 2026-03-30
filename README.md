@@ -40,7 +40,20 @@ hFE of 2N2222 is usually in range of 100-300 but I assume it as 100 (just in cas
 Calculating exact time of reachinig some voltage in this case is complicatead, because $$V_C(t)$$ **is not a linear function** we can calculate time to reach some part of $$V_{C_{MAX}}$$ but transition stll won't be linear. One RC stands for nearly 63% of maximum voltage, but to reach 95% of maximum voltage the time would be nearly 3*RC. Another problem is that discharging has inverted characteristic in comprassion to charging function. So to make operating on high brightness easy, discharging button should be tied to bigger resitance than charging button. I decided to put 1.8kΩ resistor near charging button which stands for charging to 63% in 1.8 seconds and 95% in 5,4 seconds of holding the button, and 4.7kΩ resistor near discharging to make operating on higher voltage easier.
 ## Schematic
 This image featuers screenshot from KiCad where I designed schematic with calculated values.
+
 <img width="1881" height="1243" alt="image" src="https://github.com/user-attachments/assets/00f0fc91-e434-41b2-a7f0-fd832bcc1576" />
+
+## Building a prototype:
+Image below shows my working prototype of discrete LED dimmer using basic components and universal PCB board:
+
+Front view:
+![LedDimmerFront](https://github.com/user-attachments/assets/add26725-ad3c-47bf-8a02-04e4232c30d7)
+
+Backside view:
+![LedDimmerBack](https://github.com/user-attachments/assets/494533fd-7739-4f4f-9026-4062284ac97a)
+
+
+
 
 
 
